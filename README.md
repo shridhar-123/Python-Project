@@ -1,6 +1,9 @@
 # Python-Project
 Implement Grep command in python.
 
+#rcommand to run:-
+cat data.csv | python grep.py "[A-Z]N0"
+
 # Steps to follow:-  
 1.Will work on basic functinality of grep.  
 2.Will try to include grep commands flags to implementation.  
