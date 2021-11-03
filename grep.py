@@ -1,4 +1,3 @@
-#  Put this in a file called '1.py'
 import sys
 import re
 
