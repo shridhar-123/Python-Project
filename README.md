@@ -1,36 +1,28 @@
 # Python-Project
 Implement Grep command in python.
 
-#rcommand to run:-
-cat data.csv | python grep.py "[A-Z]N0"
 
-# Steps to follow:-  
-1.Will work on basic functinality of grep.  
-2.Will try to include grep commands flags to implementation.  
-3.Will include some testcases to code.  
+## Usage
+    python mygrep.py [--help] [--color] [-h] [-i] [-l] [-n] [-R]
+                 pattern [FILES [FILES ...]]
 
-# Problem Statement:-  Implement grep command using Python
-Implement grep command in python supporting the following flags. The output should match that of grep command. Python regular expression should be used for the match unless -F is specified.
+    Find matches of a pattern in lines of file(s).
 
-grep [OPTIONS] PATTERN [FILE...]
+    positional arguments:
+    pattern               the pattern to find
+    FILES                 the files(s) to search
 
-     -c, --count
-             Only a count of selected lines is written to standard output.
-     -F, --fixed-strings
-             Interpret pattern as a set of fixed strings (i.e. force grep to behave as fgrep).
-     -i, --ignore-case
-             Perform case insensitive matching.  By default, grep is case sensitive.   
-     -v, --invert-match
-             Selected lines are those not matching any of the specified patterns.   
-     -R, -r, --recursive
-             Recursively search subdirectories listed.
-# Deliverables
+    optional arguments:
+    --help                     show this help message and exit
+    --color, --colour          highlight matches
+    -h, --no-filename          print without filename headers
+    -i, --ignore-case          case-insensitive search
+    -l, --files-with-matches   print only filenames with matches
+    -n, --line-number          print line numbers, indexed from 1
+    -R, -r, --recursive        recursively search directories
 
-Python code for the project
-Documentation for the project clearly specifying how to install and use
-CLI reference documentation
-test cases
-References
+
+
 
 argparse - https://docs.python.org/3/library/argparse.html
 Click - https://click.palletsprojects.com/en/7.x/
